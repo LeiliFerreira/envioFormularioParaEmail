@@ -1,0 +1,44 @@
+<!DOCTYPE HTML> 
+<html lang="pt-br"> 
+	<head> 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styleIndex.css"> 
+		<title> Formulário </title>
+	</head>
+	<body> 
+		<h1> 
+			Seja bem Vindo!
+		</h1>
+		<h3>  
+			Preencha o formulário para que nossa equipe possa entrar em contato. 
+		</h3>
+		<section class ="galeria"> 
+			<img class="foto" src="img/img_slide01.jpg" width="390px" height="290px" />
+			<img class="foto" src="img/img_slide02.jpg" width="390px" height="290px"/>
+			<img class="foto" src="img/img_slide03.jpg" width="390px" height="290px"/> 
+			<img class="foto" src="img/img_slide04.jpg" width="390px" height="290px"/>
+		</section>
+		<form action="https://api.staticforms.xyz/submit" method="post">
+        	<div class="inputForm"> 
+        		<h3> Formulário de Clientes </h3>
+        	<div class="inputNome">
+        		<input type="text" name="name" placeholder="  Nome Completo">
+        	</div>
+        	<br>
+        	<div class="inputEmail"> 
+        		<input type="text" name="email" placeholder="  Email" />
+        	</div>
+        	<br>
+        	<div class="inputMensagem"> 
+        		<textarea name="message" placeholder="  Assunto"></textarea>
+        	</div>
+        	<br>
+        	<input type="hidden" name="accessKey" value="CHAVE DE ACESSO PARA O EMAIL ESCOLHIDO">
+        	<div class="inputBotao"> 
+        		<input type="submit" value="Enviar" onclick="alert('Enviado com sucesso!')" />
+        	</div>
+        	</div>
+    	</form>
+	</body>
+</html>

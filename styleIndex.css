@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Arial'; 
+	font-size: 15px;
+	background-image: url(img/background.jpg); 
+}
+
+h1 {
+	font-family: 'Arial'; 
+	color: #ffffff; 
+	font-size: 65px;  
+	position: relative;
+	margin-left: 200px;
+	margin-top: 60px;
+}
+
+h3{
+	font-family: 'Arial'; 
+	color: #ffffff; 
+	position: relative;
+	font-size: 17px; 
+	margin-top: 20px; 
+	margin-left: 205px;
+}
+
+.galeria {
+	top: 50px; 
+	margin-left: 225px;
+	position: relative; 
+	overflow: hiden; 
+}
+
+.foto {
+	position: absolute;
+	opacity: 0;
+	animation-name: animacao;
+	animation-duration: 20s; 
+	animation-iteration-count: infinite; 
+}
+
+@keyframes animacao {
+	25%{
+		opacity: 1; 
+		transform:scale(1.1,1.1);
+	}
+
+	50%{
+		opacity: 0; 
+	}
+}
+
+.foto:nth-child(1){
+	 
+}
+
+.foto:nth-child(2){
+	animation-delay: 3s;
+}
+
+.foto:nth-child(3){
+	animation-delay: 8s; 
+}
+
+.foto:nth-child(4){
+	animation-delay: 13s; 	
+}
+
+form .inputForm {
+	background: #8e44ad;
+	height: 400px;
+	width: 300px;
+	margin-top: -85px;
+	margin-left: 880px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.100); 
+	backdrop-filter: blur(2px); 
+	box-shadow: 10px 10px 10px 10px rgba(0.1,0.1,0.1,0.1); 
+}
+
+.inputForm h3{
+	top: 25px;
+	margin-left: 58px;
+	margin-top: 30px;
+	font-family: 'Arial'; 
+	color: #fff;
+}
+
+.inputNome input {
+	margin-top: 50px;
+	margin-left: 23px;
+	width: 250px;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+}
+
+.inputEmail input {
+	margin-top: 0px;
+	margin-left: 23px;
+	width: 250px;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+}
+
+.inputMensagem textarea {
+	font-family: 'Arial'; 
+	margin-top: 0px;
+	margin-left: 23px;
+	width: 250px;
+	height: 120px;
+	border-radius: 5px;
+	border: none;
+}
+
+.inputBotao input[type="submit"] {
+	cursor: pointer;
+	font-family: 'Arial'; 
+	margin-left: 23px;
+	width: 250px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	background-color: #8e44ad;
+	color: #fff;
+}
+
+
+
+
+
+
+
